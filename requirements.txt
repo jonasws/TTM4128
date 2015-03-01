@@ -1,0 +1,4 @@
+pyasn1==0.1.7
+pycrypto==2.6.1
+pysnmp==4.2.5
+wsgiref==0.1.2
