@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Summary of traffic data</title>
+</head>
+<body>
+
+<h1>Summary of traffic data</h1>
+{% for data in traffic_data  %}
+    <h2>{{ data.host }}</h2>
+    <p>
+        <i>Received datagrams: </i> {{ data.ip_received }} <br/>
+        <i>Delivered datagrams: </i> {{ data.ip_received }}
+    </p>
+{% endfor %}
+
+</body>
+</html>
