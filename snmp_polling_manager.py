@@ -22,7 +22,7 @@ def compose_email_summary(traffic_data):
     msg['Subject'] = 'Traffic data summary'
     msg['From'] = 'jonasws@stud.ntnu.no'
     msg['To'] = 'ttm4128@item.ntnu.no'
-    smtpObj.sendmail('jonasws@stud.ntnu.no', ('ttm4128.item.ntnu.no', 'jonasws@stud.ntnu.no'), msg.as_string())
+    smtpObj.sendmail('jonasws@stud.ntnu.no', ('ttm4128@item.ntnu.no', 'jonasws@stud.ntnu.no'), msg.as_string())
     print "The email was sent!"
 
 
