@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+{% block header %}
+{% endblock %}
+
+<h2>Operating system</h2>
+<p>{{ os_info }}</p>
+<h2>IP interfaces</h2>
+    {% for ip_interface in ip_interfaces %}
+        <h3>{{ ip_interface.name }}</h3>
+        <p><em>IP address:</em> {{ ip_interface.ip_address }}, <em>Subnet mask:</em> {{ ip_interface.subnet_mask }}</p>
+    {% endfor %}
+
+</body>
+</html>
