@@ -5,9 +5,7 @@ CIM_ENDPOINT = 'http://ttm4128.item.ntnu.no:5988'
 
 def fetch_operating_system_information(conn=None):
     """
-    Returns the CIM string describing the operating system
-    :param conn:
-    :return:
+    Returns the CIM string describing the operating system, optionally reusing the connection object
     """
     if conn is None:
         conn = pywbem.WBEMConnection(CIM_ENDPOINT)
@@ -18,9 +16,7 @@ def fetch_operating_system_information(conn=None):
 
 def fetch_ip_interface_info(conn=None):
     """
-    Returns a list of dictionaries containing info on ip interfaces
-    :param conn:
-    :return:
+    Returns a list of dictionaries containing info on IP interfaces
     """
     if conn is None:
         conn = pywbem.WBEMConnection(CIM_ENDPOINT)
